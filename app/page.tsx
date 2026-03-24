@@ -234,7 +234,7 @@ export default function Home() {
               <div>
                 <h3 className="text-lg font-bold mb-3">お問い合わせ</h3>
                 <ul className="space-y-2 text-sm text-gray-400">
-                  <li><a href="mailto:taku_oono@node-bee.com" className="hover:text-emerald-400">taku_oono@node-bee.com</a></li>
+                  <li><span className="text-gray-400">taku_oono@node-bee.com</span></li>
                   <li><a href="https://calendly.com/taku_oono-node-bee/30min" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400">無料相談を予約する</a></li>
                 </ul>
               </div>
@@ -249,3 +249,4 @@ export default function Home() {
     </>
   )
 }
+

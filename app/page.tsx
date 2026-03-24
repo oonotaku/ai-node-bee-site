@@ -25,7 +25,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
                 <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700" asChild>
-                  <a href="https://calendly.com/taku_oono-node-bee/30min" target="_blank" rel="noopener noreferrer">
+                  <a href="https://calendly.com/taku_oono-node-bee/30min" target="_blank" rel="noopener noreferrer" onClick={() => gtag('event', 'click_booking', { event_category: 'CTA', event_label: '無料相談予約' })}>
                     無料相談を予約する <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -141,7 +141,7 @@ export default function Home() {
             </div>
             <div className="mt-12 text-center">
               <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700" asChild>
-                <a href="https://calendly.com/taku_oono-node-bee/30min" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendly.com/taku_oono-node-bee/30min" target="_blank" rel="noopener noreferrer" onClick={() => gtag('event', 'click_booking', { event_category: 'CTA', event_label: '無料相談予約' })}>
                   無料相談を予約する <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>
@@ -182,7 +182,7 @@ export default function Home() {
               ツールの選び方から実際の設定まで、ハンズオンでサポートします。まずはお気軽にご相談ください。
             </p>
             <Button size="lg" className="bg-white text-emerald-700 hover:bg-emerald-50 font-bold" asChild>
-              <a href="https://calendly.com/taku_oono-node-bee/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/taku_oono-node-bee/30min" target="_blank" rel="noopener noreferrer" onClick={() => gtag('event', 'click_booking', { event_category: 'CTA', event_label: '無料相談予約' })}>
                 今すぐ予約する <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </Button>
@@ -235,7 +235,7 @@ export default function Home() {
                 <h3 className="text-lg font-bold mb-3">お問い合わせ</h3>
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li><span className="text-gray-400">taku_oono@node-bee.com</span></li>
-                  <li><a href="https://calendly.com/taku_oono-node-bee/30min" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400">無料相談を予約する</a></li>
+                  <li><a href="https://calendly.com/taku_oono-node-bee/30min" target="_blank" rel="noopener noreferrer" onClick={() => gtag('event', 'click_booking', { event_category: 'CTA', event_label: '無料相談予約' })} className="hover:text-emerald-400">無料相談を予約する</a></li>
                 </ul>
               </div>
             </div>
@@ -249,4 +249,5 @@ export default function Home() {
     </>
   )
 }
+
 

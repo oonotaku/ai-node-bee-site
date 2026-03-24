@@ -20,19 +20,26 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
+            <Link href="#profile" className="text-gray-600 hover:text-emerald-600">
+              代表プロフィール
+            </Link>
+            <Link href="#products" className="text-gray-600 hover:text-emerald-600">
+              プロダクト
+            </Link>
             <Link href="#services" className="text-gray-600 hover:text-emerald-600">
               サービス
             </Link>
             <Link href="#pricing" className="text-gray-600 hover:text-emerald-600">
               料金プラン
             </Link>
-            <Link href="#cases" className="text-gray-600 hover:text-emerald-600">
-              導入事例
-            </Link>
             <Link href="#company" className="text-gray-600 hover:text-emerald-600">
               会社概要
             </Link>
-            <Button className="bg-emerald-600 hover:bg-emerald-700">無料相談を予約</Button>
+            <Button className="bg-emerald-600 hover:bg-emerald-700" asChild>
+              <a href="https://calendly.com/taku_oono-node-bee/30min" target="_blank" rel="noopener noreferrer">
+                無料相談を予約
+              </a>
+            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -49,6 +56,20 @@ export default function Header() {
         <div className="md:hidden bg-white border-b border-gray-200">
           <div className="container mx-auto px-4 py-4 space-y-4">
             <Link
+              href="#profile"
+              className="block text-gray-600 hover:text-emerald-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              代表プロフィール
+            </Link>
+            <Link
+              href="#products"
+              className="block text-gray-600 hover:text-emerald-600"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              プロダクト
+            </Link>
+            <Link
               href="#services"
               className="block text-gray-600 hover:text-emerald-600"
               onClick={() => setIsMenuOpen(false)}
@@ -63,20 +84,17 @@ export default function Header() {
               料金プラン
             </Link>
             <Link
-              href="#cases"
-              className="block text-gray-600 hover:text-emerald-600"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              導入事例
-            </Link>
-            <Link
               href="#company"
               className="block text-gray-600 hover:text-emerald-600"
               onClick={() => setIsMenuOpen(false)}
             >
               会社概要
             </Link>
-            <Button className="w-full bg-emerald-600 hover:bg-emerald-700">無料相談を予約</Button>
+            <Button className="w-full bg-emerald-600 hover:bg-emerald-700" asChild>
+              <a href="https://calendly.com/taku_oono-node-bee/30min" target="_blank" rel="noopener noreferrer">
+                無料相談を予約
+              </a>
+            </Button>
           </div>
         </div>
       )}

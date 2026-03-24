@@ -7,10 +7,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "AI活用コンシェルジュ | node-bee合同会社",
+  title: "node-bee合同会社 | 中小企業の業務をAIとSaaSでシンプルに",
   description:
-    "中小企業・士業向けAI/DX支援サービス。専門知識がなくても安心。あなたのビジネスに最適なAI活用方法をプロのアドバイザーがサポートします。",
-    generator: 'v0.dev'
+    "コールセンター・SaaS・DX支援で20年以上の現場経験を持つプロが、中小企業・小規模事業者の業務改善をハンズオンでサポートします。",
 }
 
 export default function RootLayout({
